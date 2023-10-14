@@ -3,10 +3,10 @@ document.writeln("hello world");
 document.write("fnish");//sayfaya çıktı
 console.log("naber bebis");//konsolo çıktı
 
-let a=10;
-let b=20;
-console.log("a + b = ",a+b);
-console.log("a + b" + (a+b));//hocam gördüğün üzere dah çok python a benziyo :)
+let a = 10;
+let b = 20;
+console.log("a + b = ", a + b);
+console.log("a + b" + (a + b));//hocam gördüğün üzere dah çok python a benziyo :)
 //console.clear();//bunla da consolu temizleriz :))
 
 alert("lütfen enter tuşuna basmayımız"); //pupup ile kullanıya uyarı vermeyi sağlar. window objesinin metodudur. document window'un 
@@ -24,14 +24,48 @@ console.error("hata fırlattım");//bu sekilde consolda hata çıkartabilirsin
 
 //const obje tanımladığın zaman içeriğine yeni özellik eklemezsin ama. özelliğin değerini değiştirebilirisn
 
-const user ={
-    name:"hasan",
-    surname:"bokabasan"
+const user = {
+    name: "hasan",
+    surname: "bokabasan"
 }
 
 console.log(user.name);
-user.name="berk";
+user.name = "berk";
 console.log(user.name);
 
-user={age:10};
-console.log(user.age);// gibi :))
+//user={age:10};
+//console.log(user.age);// gibi :))
+
+let x = 10;
+console.log(x++);
+console.log(++x);//hehe bunlarda var :))
+
+let y = 4;
+y **= 2;
+console.log(y);
+
+/// == ve ==== arasındaki fark 
+let m = 4;
+let n = "4";
+
+console.log("m==n ", m == n);
+console.log("m===n ", m === n);
+// üç eşittir değişknelerin tipininde aynı olup olmamasına bakar
+
+// && || c deki ile aynı
+
+//! kullanıcıdan alınan tüm değerler string olur 
+//? alert, promp, confirm
+//alert kullanıcıya sadece uyarı veriri,
+//promp kullanıcıya istediğimimz mesajı verir ve kullanıcıdan değer almamızı sağlar
+//confirm ise kullanıcıdan boolean değer döndürür
+
+alert("I want to play game");
+let name= prompt("your name ¿");
+if (confirm(name + " are you sure to delete it")) {
+    console.log("sildik");
+}
+else {
+    console.log("tamam tamam silmedik");
+}
+
