@@ -69,3 +69,32 @@ else {
     console.log("tamam tamam silmedik");
 }
 
+
+// todo Type Casting
+
+//Number, ParseInt(theVaraible), ParseFloat(theVaraible), String(theVaraible), theVaraible.ToString()
+//ParseInt ve ParseFloat arasındaki fark flaot string bile olsa int olduğu için noktadan sonrasını atar 
+
+let arr=[1,2,3,4];
+arr=String(arr)
+console.log(arr);
+console.log(typeof(arr)); //hocam ilginçtir array'i de string'e çevirebiliyor. Ancak arrray to number olmuyor :))
+
+// * Döngü syntax'ı da C'deki ile aynı
+for(let i=1;i<11;i++)
+{
+    for(let j=1;j<11;j++)
+    {
+        console.log(j+" X "+i+" = ",i*j);
+
+    }
+}
+
+//! Fonksiyon tanımlama pythona benziyo
+// function func_name (paremeters)
+//{ 
+//      code;
+// }
+
+//? Hocam return type yazmıyoruz dikkate edelim.  pythona benziyo
+
