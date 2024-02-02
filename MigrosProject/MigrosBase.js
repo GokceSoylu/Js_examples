@@ -1,20 +1,24 @@
 class Migros
 {
     sale=0.8
-    constructor(name, surname, products, haveCard)
+    constructor(name, surname, products)
     {
         this.name=name
         this.surname=surname
         this.products=products
+    }
+    have_card(haveCard)
+    {
         this.haveCard=haveCard
     }
-    calculate(sale)
+
+    calculate()
     {
         if(this.checkProduct)
         {
             let amount=0
             if(this.haveCard)
-                this.products.forEach(product =>amount+=product*sale)
+                this.products.forEach(product =>amount+=product*this.sale)
             else
                 this.products.forEach(product =>amount+=product)
             return amount
@@ -34,7 +38,7 @@ class Migros
     }
     getSurname()
     {
-        console.kog(this.surname)
+        console.log(this.surname)
         return this.surname
     }
 }
