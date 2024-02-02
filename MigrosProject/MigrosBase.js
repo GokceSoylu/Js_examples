@@ -1,5 +1,6 @@
 class Migros
 {
+    sale=0.8
     constructor(name, surname, products, haveCard)
     {
         this.name=name
@@ -7,13 +8,13 @@ class Migros
         this.products=products
         this.haveCard=haveCard
     }
-    calculate()
+    calculate(sale)
     {
         if(this.checkProduct)
         {
             let amount=0
             if(this.haveCard)
-                this.products.forEach(product =>amount+=product*0.8)
+                this.products.forEach(product =>amount+=product*sale)
             else
                 this.products.forEach(product =>amount+=product)
             return amount
