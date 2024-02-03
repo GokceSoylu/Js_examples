@@ -5,12 +5,8 @@ class Customer extends Migros
         super(name,surname,products,haveCard)
     }
     //hoca birde hesapla metodu eklemiş ama gerek yok bence direkt migrostan kullanamz mı
-    calculate()
+    calculate(discountCoupon)
     {
-        let discountCoupon=0
-        if(confirm("ek indirminiz var mı?"))
-            discountCoupon=prompt("indirim miktarı")
-        super.sale+=discountCoupon
-        super.calculate()
+        return super.calculate(discountCoupon)
     }
 }

@@ -1,6 +1,6 @@
 class Migros
 {
-    sale=0.8
+    sale=0.8;
     constructor(name, surname, products)
     {
         this.name=name
@@ -12,19 +12,26 @@ class Migros
         this.haveCard=haveCard
     }
 
-    calculate()
+    calculate(discountCoupon)
     {
-        if(this.checkProduct)
+        if(this.checkProduct())
         {
             let amount=0
             if(this.haveCard)
-                this.products.forEach(product =>amount+=product*this.sale)
+            {
+                this.products.forEach(product =>
+                {
+                    amount+=product.productPrice*(this.sale+(discountCoupon/100))
+                })
+
+            }
             else
-                this.products.forEach(product =>amount+=product)
+                this.products.forEach(product =>amount+=product.productPrice)
             return amount
         }
         else
             alert("ürün seçmelisiniz")
+        return amount
     }
     checkProduct()
     {
