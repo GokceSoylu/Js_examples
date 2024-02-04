@@ -1,0 +1,27 @@
+[
+    {
+        "name":"necmiye",
+        "surname":"soylu",
+        "id":1
+    },
+    {
+        "name":"hasan",
+        "surname":"sabbah",
+        "id":2
+    },
+    {
+        "name":"kemal",
+        "surname":"ay",
+        "id":3
+    },
+    {
+        "name":"olaf",
+        "surname":"snow",
+        "id":4
+    },
+    {
+        "name":"merida",
+        "surname":"kızıl",
+        "id":5
+    }
+]
