@@ -17,7 +17,8 @@ function clear(e)
 {
     e.preventDefault()
     search_input.value=""
-    Array.from(img_wrapper.children).forEach(cards=>cards.remove())
+    //Array.from(img_wrapper.children).forEach(cards=>cards.remove())
+    img_wrapper.innerHTML="" //diretk böyle yaparak içerideki kodları sıfırlayabilirisn yukaridakş de uzun hali :))
 }
 function search(e)
 {
