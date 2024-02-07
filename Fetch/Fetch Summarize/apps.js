@@ -18,3 +18,17 @@ fetch("https://jsonplaceholder.typicode.com/users")
 //dıın zurnanın selamun aleyküm dediği yer ilk response ile yine promise döndürür bunu nyakalamk için fetch in json metodunu kulanırız
 //ve buda promise döndürdüğü için ikinci bir then kullanıırz ve bu ikinxci then ile data yı yakalar ve dataya istediğimimz işlemi bu
 //bu ikinci then içerisinde yaparız
+
+
+//birde post metodumuz var. yukarıda diretk url verdiğimiz get oluyor
+//sunucuya bir şeyler göndermek istersekte post kullanırız şu an bir şeyler gönderebileceğimiz bir sunucumuz olmadığı için sadece göstermelik yazıcam
+
+
+
+// fetch(url,{
+//     method:"POST",
+//     headers:{
+//         "Content-Type":"application.json"
+//     },
+//     body:JSON.stringify(data)
+// })
