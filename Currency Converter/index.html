@@ -18,17 +18,17 @@
                 <select id="firstCurrency">
                     <option>USD</option>
                     <option>EUR</option>
-                    <option>TUR</option>
+                    <option>TRY</option>
                 </select>
                 <div id="converter-buttons-wrapper">
-                    <button class="converter-button"><i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="converter-button"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                    <button id="converter-button"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button id="convert-buttons"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
                 </div>
                 
                 <select id="secondCurrency">
                     <option>USD</option>
                     <option>EUR</option>
-                    <option>TUR</option>
+                    <option selected>TRY</option>
                 </select>
                 <input id="result" type="number" placeholder="result" readonly>
             </div>
@@ -36,6 +36,7 @@
     </div>
 
 
-    <script src="apps.js"></script>
+    <script src="currancy.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
