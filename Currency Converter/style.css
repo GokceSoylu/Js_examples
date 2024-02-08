@@ -1,0 +1,38 @@
+#container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#main{
+    background-color: rgb(197, 231, 243);
+    border: 1px solid lightgray;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+}
+#content-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#header-wrapper > h4{
+    margin-top: 10px;
+    font-size: larger;
+}
+select{
+    padding: 5px;
+    margin: 0px 8px;
+}
+ input{
+    padding: 2px;
+} 
+.converter-buttons-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
