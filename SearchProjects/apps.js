@@ -23,7 +23,8 @@ function clear(e)
 function search(e)
 {
     e.preventDefault()
-   
+    //clear()
+    img_wrapper.innerHTML="" //önce eski resimlerin temizlenemsini sağladım
     const search_txt=search_input.value.trim()
     fetch(`https://api.unsplash.com/search/photos?query=${search_txt}`,{
         method:"GET",
@@ -37,7 +38,7 @@ function search(e)
             addImgUI(img.urls.small)
         });
     })
-    
+    search_input.value=""
 }
 function addImgUI(url)
 {
