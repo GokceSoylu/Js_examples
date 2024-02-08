@@ -18,7 +18,7 @@ function exchange(e)
     const firstSelectValue=firstSelect.options[firstSelect.selectedIndex].textContent
     const secondSelectValue=secondSelect.options[secondSelect.selectedIndex].textContent
     currancy.exchange(amount,firstSelectValue, secondSelectValue)
-    .then(result=>resultOutput.value=result) //unutmayalım async kullanılan he rfunc promise döndürü bu yüzden burada then ile yakaladık :))
+    .then(result=>resultOutput.value=result.toFixed(2)) //unutmayalım async kullanılan he rfunc promise döndürü bu yüzden burada then ile yakaladık :))
 }
 function exchangeType(e)
 {
